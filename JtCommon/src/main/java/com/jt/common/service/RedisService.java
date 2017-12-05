@@ -1,4 +1,4 @@
-package tedu.jt.common.service;
+package com.jt.common.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

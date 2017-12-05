@@ -1,4 +1,4 @@
-package tedu.jt.common.service;
+package com.jt.common.service;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package tedu.jt.common.service;
+package com.jt.common.service;
 
 public interface Function<E, T> {
 
