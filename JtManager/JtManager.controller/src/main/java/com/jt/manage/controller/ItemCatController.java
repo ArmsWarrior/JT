@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.jt.manage.pojo.ItemCat;
@@ -20,5 +21,14 @@ public class ItemCatController {
 	@RequestMapping("/queryall")
 	public List<ItemCat> queryAll(){
 		List<ItemCat> list = itemCatService.queryAll();
-	return list;}
+	return list;
+	
+	}
+	
+	@RequestMapping("/list")
+	@ResponseBody
+	public List<ItemCat> queryItemCatList(@RequestParam(defaultValue="0")Integer id){
+		List<ItemCat> itemCats=itemCatService.queryItemCatList(id);
+		return itemCats;
+	}
 }

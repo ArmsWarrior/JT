@@ -19,6 +19,12 @@ public class ItemCat extends BasePojo{
 	private Integer status;
 	private Integer sortOrder;
 	private Boolean isParent;
+	public String getText(){
+		return this.getName();
+	}
+	public String getState(){
+		return this.getIsParent()?"closed":"open";
+	}
 	
 	public Boolean getIsParent() {
 		return isParent;
