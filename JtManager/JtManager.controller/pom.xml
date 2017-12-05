@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>tedu.jt</groupId>
+    <artifactId>JtManager</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>tedu.jt</groupId>
+  <artifactId>JtManager.controller</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>JtManager.controller Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+ <build>
+    <finalName>jt1708-manage-controller</finalName>
+    <plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<port>8084</port>
+					<path>/</path>
+				</configuration>
+			</plugin>
+		</plugins>
+  </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>tedu.jt</groupId>
+  		<artifactId>JtManager.service</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+</project>
