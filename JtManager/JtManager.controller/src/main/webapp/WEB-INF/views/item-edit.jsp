@@ -106,6 +106,8 @@
 					$("#itemEditWindow").window('close');
 					$("#itemList").datagrid("reload");
 				});
+			}else{
+				$.messager.alert('提示',data.msg);
 			}
 		});
 	}
